@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2fccf0a6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="image/pngegg.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>MCA Graduate</p>
+        <h1>Hi,I'm <span>Rosan</span> <br> From Odisha</h1>
+      </div>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/DSC_2676.JPG">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hi, I am Rosan Senapati , a recent graduate in Information Technology and Management from Ravenshaw
+            University. As a fresh graduate, I am eager to explore the world of technology and contribute to the
+            development of innovative solutions.
+
+            During my academic journey, I gained expertise in various domains such as programming languages, database
+            management, web development, and project management. I am proficient in languages like Java, Python, and
+            C++, and have hands-on experience in building web applications using HTML, CSS, and JavaScript.
+
+            Apart from technical skills, I am a team player with excellent communication and interpersonal skills. I
+            have experience working on group projects, where I have collaborated with team members to deliver quality
+            work within the deadline.
+
+            Currently, I am seeking opportunities to work in a dynamic and challenging environment where I can apply my
+            skills and learn from experienced professionals. Feel free to connect with me to discuss any opportunities
+            or collaborations.
+
+            Thank you for visiting my website.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/IOS Apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>Project-0(Self)</span><br>Just Talk Chatting Site</li>
+              <li><span>Project-1(Minor)</span><br>Flappy Bird Game</li>
+              <li><span>Project-2(Major)</span><br>Online Hospital Ticketing System</li>
+            </ul>
+
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>2017(10th)</span><br>Saraswati Shishu Vidya Mandir,Raghunathpur</li>
+              <li><span>2017-2019(12th)</span><br>Stewart Science College,Cuttack</li>
+              <li><span>2020-2023(B.sc ITN)</span><br>Ravenshaw University,Cuttack</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <h2>Web Page Design</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugiat, accusamus commodi impedit dolor sint repudiandae suscipit quos recusandae quod!</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <h2>App Developement</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugiat, accusamus commodi impedit dolor sint repudiandae suscipit quos recusandae quod!</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <h2>Software Development</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum fugiat, accusamus commodi impedit dolor sint repudiandae suscipit quos recusandae quod!</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+   <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="image/work-1.png" >
+        <div class="layer">
+          <h3>Smart Care</h3>
+          <p>By using tis web page you can easily schedule your appointment from home.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="work">
+        <img src="image/work-3.png" >
+        <div class="layer">
+          <h3>Just Talk </h3>
+          <p>By using this you can connect with your friends and chat without worrying about privacy threat.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="work">
+        <img src="image/work-2.jpg" id="flapp">
+        <div class="layer">
+          <h3>Flappy Bird</h3>
+          <p>Flappy Bird is an arcade style game in which player controls the bird which moves persistently to the right.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+       <a href="#" class="btn">See More</a>
+   </div> 
+  </div>
+  <!-- contact section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> rosansenapati46@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>7735113188</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-square-facebook" ></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"  ></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram" ></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin" ></i></a>
+          </div>
+          <a href="Docs/MA 1.1.pdf" download class="btn btn-2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-2">Submit</button>
+          </form>
+          <span id="msg"></span>
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &#169 Rosan.</p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemen.style.right = "0";
+    }
+    function closemenu(){
+      sidemen.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPUhZqB6jnguEsyPHQdwMX7Iud4t8yTnxMqcuN6rWsegnKE6JoytQaic9zyvnfxJBK/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
